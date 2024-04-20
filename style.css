@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+header{
+   transform: translateY(-10px);
+}
+
+header h1 {
+  color: wheat;
+  width: fit-content;
+  margin: 70px auto;
+}
+
+.left, .right{
+  text-align: center;
+}
+.left h1, .right h1{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: relative;
+}
+
+header h2 {
+  color: white;
+  translate: 890px -65px;
+  rotate: -40deg;
+  position: absolute;
+  text-align: center;
+}
+
+header img {
+  width: 50.133px;
+  height: 26.667px;
+  position: absolute;
+  translate: 850px -70px;
+  rotate: -15deg;
+}
+.myCanvas {
+  height: fit-content;
+  width: fit-content;
+}
+.main {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+.left,
+.right {
+  margin: 0 20px;
+  background-color: rgb(255, 255, 255);
+  height: 436px;
+  width: 250px;
+}
+
+.right {
+  float: right;
+}
+
+.instruction {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+}
+.instruction ul {
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+.instruction li {
+  margin: 20px;
+  list-style: none;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  40% {
+    transform: translate3d(0, 30%, 0) scale3d(0.7, 1.5, 1);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0) scale3d(1.5, 0.7, 1);
+  }
+}
+.jump:hover {
+  transform-origin: 50% 50%;
+  animation: jump 0.75s linear alternate infinite;
+}

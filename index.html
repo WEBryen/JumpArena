@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jump Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="jump">JUMP ARENA</h1>
+      <img src="./img/svg/arrow.svg" />
+      <h2>
+        hover to<br />
+        Jump
+      </h2>
+    </header>
+    <div class="main">
+      <div class="left" id="w">
+        <h1>JUMP COUNTER</h1>
+      </div>
+      <div class="myCanvas">
+        <canvas></canvas>
+      </div>
+      <div class="right" id="space">
+        <h1>SUPER JUMP COUNTER</h1>
+      </div>
+    </div>
+
+    <div class="instruction">
+      <div class="text">
+        <h1>
+          <ul>
+            <li>W - Jump</li>
+            <li>A - Move left</li>
+            <li>D - Move right</li>
+            <li>Space - Super Jump</li>
+          </ul>
+        </h1>
+      </div>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/CollisionBlock.js"></script>
+    <script src="js/Sprite.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/collisions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
